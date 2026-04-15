@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Teenlancer | Earn Money as Student</title>
+
+<meta name="description" content="Become a Teenlancer and earn money online as a student in India. Work with real companies and gain experience.">
+
+<style>
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo { font-size: 20px; font-weight: bold; }
+.menu { font-size: 24px; }
+
+/* Sections animation */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero */
+.hero {
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Steps */
+.steps {
+  padding: 20px;
+}
+
+.step {
+  margin: 20px 0;
+}
+
+/* Button */
+button {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float {
+  animation: float 4s infinite;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Funngro</div>
+  <div class="menu">☰</div>
+</header>
+
+<section class="hero">
+  <h1 class="float">Become a Teenlancer 🚀</h1>
+  <p>Earn money, gain skills, and work with real companies.</p>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <h2>💰 Earn Money</h2>
+    <p>Work on real projects and earn money as a student.</p>
+  </div>
+
+  <div class="card">
+    <h2>📚 Learn Skills</h2>
+    <p>Gain practical experience in marketing, design & more.</p>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Grow Career</h2>
+    <p>Build your profile and get future opportunities.</p>
+  </div>
+
+</section>
+
+<section class="steps">
+
+  <h2>How it Works</h2>
+
+  <div class="step">1️⃣ Sign up as Teenlancer</div>
+  <div class="step">2️⃣ Apply for projects</div>
+  <div class="step">3️⃣ Complete work</div>
+  <div class="step">4️⃣ Get paid 💸</div>
+
+</section>
+
+<section>
+  <button>Start Your Journey →</button>
+</section>
+
+<footer>
+  <p>© 2026 Funngro</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+function showOnScroll() {
+  const trigger = window.innerHeight * 0.85;
+
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < trigger) {
+      sec.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", showOnScroll);
+showOnScroll();
+</script>
+
+</body>
+</html>
