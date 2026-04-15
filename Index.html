@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- BASIC SEO -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Funngro Teenlancer | Earn Money Online for Students in India</title>
+
+<meta name="description" content="Earn real money as a student with Funngro Teenlancer. Work with real companies, gain experience, and grow your career.">
+
+<meta name="keywords" content="earn money online India, student jobs India, teen freelancer, Funngro">
+
+<meta name="robots" content="index, follow">
+
+<style>
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow-x: hidden;
+}
+
+/* Banner */
+.top-banner {
+  background: #22c55e;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo { font-size: 20px; font-weight: bold; }
+.menu { font-size: 24px; }
+
+/* ===== SCROLL ANIMATION ===== */
+section {
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* Floating */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Rotate forward */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Rotate reverse */
+@keyframes rotateReverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* Hero */
+.hero {
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 28px;
+}
+
+/* Circles */
+.circles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Rotating rings */
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 2px solid rgba(34,197,94,0.6);
+  animation: rotate 8s linear infinite;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px dashed rgba(34,197,94,0.4);
+  animation: rotateReverse 12s linear infinite;
+}
+
+/* ICON (NO ROTATION) */
+.icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Colors */
+.pink { background: #e8c7c3; color: black; }
+.blue { background: #a8d0db; color: black; }
+.yellow { background: #e8d9b5; color: black; }
+
+/* Button */
+button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 style="display:none;">Funngro Teenlancer Earn Money Online India</h1>
+
+<div class="top-banner">
+  🚀 As seen on Shark Tank India — trusted by 50+ lakh users
+</div>
+
+<header>
+  <div class="logo">Funngro</div>
+  <div class="menu">☰</div>
+</header>
+
+<section class="hero">
+  <h1>Funngro Teenlancer</h1>
+  <p>Earn REAL money by working with REAL companies!</p>
+</section>
+
+<section class="circles">
+
+  <a href="teenpage.html" style="text-decoration: none;">
+  <div class="circle pink">
+    <div class="icon">👤</div>
+    <h2>Teenlancers</h2>
+    <p>Be Independent</p>
+  </div>
+</a>
+
+  <div class="circle blue">
+    <div class="icon">🏢</div>
+    <h2>Companies</h2>
+    <p>Smart Talent Solution</p>
+  </div>
+
+  <div class="circle yellow">
+    <div class="icon">👩</div>
+    <h2>She-Lancer</h2>
+    <p>Empowering Women</p>
+  </div>
+
+</section>
+
+<!-- ✅ CONNECTED BUTTON -->
+<section>
+  <button onclick="location.href='teenpage.html'">
+    Start Earning Now →
+  </button>
+</section>
+
+<section>
+  <h2>How to Earn Money Online as a Student in India</h2>
+  <p>
+    Funngro helps students and teenagers earn money online by working with real companies.
+  </p>
+</section>
+
+<section>
+  <h2>Why Choose Funngro?</h2>
+  <p>
+    Trusted platform with real work opportunities and secure payments.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Funngro | All Rights Reserved</p>
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+const sections = document.querySelectorAll("section");
+
+function showOnScroll() {
+  const trigger = window.innerHeight * 0.85;
+
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+
+    if (top < trigger) {
+      sec.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", showOnScroll);
+showOnScroll();
+</script>
+
+</body>
+</html>
